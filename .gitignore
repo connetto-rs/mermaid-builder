@@ -20,6 +20,4 @@ target
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 coverage
-cobertura.xml
 *.profraw
-tarpaulin-report.html
