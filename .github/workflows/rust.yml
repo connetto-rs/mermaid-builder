@@ -100,6 +100,8 @@ jobs:
     runs-on: ubuntu-26.04
     steps:
     - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      with:
+        ref: ${{ github.event.pull_request.head.sha || github.sha }}
     - name: Install Rust
       uses: dtolnay/rust-toolchain@683b588c487a69d01f6c6ddf40f036ff682cc2c8 # master
       with:
